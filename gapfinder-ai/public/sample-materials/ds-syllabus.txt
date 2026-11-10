@@ -1,0 +1,11 @@
+Data Structures - Course Syllabus
+Unit 1: Arrays and Linked Lists
+Array operations and complexity, singly linked list, doubly linked list, insertion and deletion, reversing a list.
+Unit 2: Stacks and Queues
+Stack operations (push, pop, peek), queue and circular queue, applications such as expression evaluation and balanced brackets.
+Unit 3: Trees
+Binary tree, tree traversals (inorder, preorder, postorder), binary search tree, insertion, search and deletion in a BST.
+Unit 4: Graphs
+Graph representation (adjacency matrix and adjacency list), breadth first search, depth first search, shortest path basics.
+Unit 5: Sorting and Searching
+Linear search, binary search, bubble sort, merge sort, quick sort, time complexity comparison.

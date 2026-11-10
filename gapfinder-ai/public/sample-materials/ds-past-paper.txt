@@ -1,0 +1,16 @@
+Data Structures - End Semester Examination (Previous Year)
+Answer all questions.
+
+Q1. Differentiate between an array and a linked list. [4 marks]
+Q2. Write the steps to reverse a singly linked list. [5 marks]
+Q3. What is a doubly linked list? State one advantage. [2 marks]
+Q4. Explain the LIFO principle of a stack with push and pop. [3 marks]
+Q5. How does a circular queue avoid wasting space? [3 marks]
+Q6. Explain how a stack is used to check balanced brackets. [4 marks]
+Q7. Write the inorder, preorder and postorder traversal rules of a binary tree. [5 marks]
+Q8. Explain deletion of a node with two children in a binary search tree. [5 marks]
+Q9. Compare adjacency matrix and adjacency list representations of a graph. [4 marks]
+Q10. Differentiate between BFS and DFS. [5 marks]
+Q11. Explain binary search and state its time complexity. [4 marks]
+Q12. Explain merge sort and state its time complexity. [5 marks]
+Q13. Why can quick sort take O(n squared) time in the worst case? [3 marks]

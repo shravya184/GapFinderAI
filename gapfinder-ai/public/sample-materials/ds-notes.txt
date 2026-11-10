@@ -1,0 +1,65 @@
+# Data Structures - Study Notes
+
+# Chapter 1: Arrays and Linked Lists
+
+## 1.1 Arrays
+An array stores elements of the same type in contiguous memory, so any element can be reached by its index in O(1) time. Inserting or deleting in the middle needs shifting of elements and takes O(n) time. The size of a static array is fixed when it is created.
+
+## 1.2 Singly linked list
+A singly linked list is a chain of nodes. Each node holds data and a pointer to the next node. The last node points to NULL. Insertion at the head takes O(1) time, but searching for a value takes O(n) because nodes must be visited one by one from the head.
+
+## 1.3 Doubly linked list
+Each node of a doubly linked list stores two pointers: next and previous. This allows traversal in both directions and makes deleting a known node easier, at the cost of extra memory for the second pointer.
+
+## 1.4 Reversing a linked list
+To reverse a singly linked list, keep three pointers: previous, current and next. For every node, save next, point current to previous, then move previous and current one step forward. When current becomes NULL, previous is the new head.
+
+# Chapter 2: Stacks and Queues
+
+## 2.1 Stack
+A stack follows the LIFO rule: last in, first out. Push adds an element on top, pop removes the top element and peek reads it without removing. Popping from an empty stack is called stack underflow.
+
+## 2.2 Queue
+A queue follows the FIFO rule: first in, first out. Enqueue adds at the rear and dequeue removes from the front. A circular queue reuses empty space at the front by wrapping the rear pointer around using modulo arithmetic.
+
+## 2.3 Applications of stacks
+Stacks are used to check balanced brackets, to convert infix expressions to postfix and to evaluate postfix expressions. They also store return addresses during function calls (the call stack).
+
+# Chapter 3: Trees
+
+## 3.1 Binary tree
+A binary tree is a tree in which every node has at most two children, called the left child and the right child. The topmost node is the root and nodes with no children are leaves.
+
+## 3.2 Tree traversals
+Inorder traversal visits left subtree, root, then right subtree. Preorder visits root, left, right. Postorder visits left, right, root. Level order traversal uses a queue and visits nodes level by level.
+
+## 3.3 Binary search tree
+In a binary search tree (BST) every value in the left subtree is smaller than the node and every value in the right subtree is larger. Inorder traversal of a BST gives the values in sorted order. Search, insertion and deletion take O(h) time where h is the height; this is O(log n) for a balanced tree and O(n) for a skewed tree.
+
+## 3.4 Deleting from a BST
+Deleting a leaf simply removes it. A node with one child is replaced by that child. A node with two children is replaced by its inorder successor, the smallest value in its right subtree, and then that successor is deleted.
+
+# Chapter 4: Graphs
+
+## 4.1 Graph representation
+A graph has vertices and edges. An adjacency matrix uses a V by V table and needs O(V squared) space. An adjacency list stores the neighbours of each vertex and needs O(V + E) space, which is better for sparse graphs.
+
+## 4.2 Breadth first search
+BFS explores a graph level by level using a queue. It finds the shortest path in an unweighted graph. Its time complexity with an adjacency list is O(V + E).
+
+## 4.3 Depth first search
+DFS goes as deep as possible along a path before backtracking. It uses a stack or recursion. DFS is used for cycle detection and topological sorting. Its time complexity with an adjacency list is O(V + E).
+
+# Chapter 5: Sorting and Searching
+
+## 5.1 Searching
+Linear search checks every element and takes O(n) time. Binary search works only on a sorted array: it compares the target with the middle element and discards half of the array each step, giving O(log n) time.
+
+## 5.2 Simple sorting
+Bubble sort repeatedly swaps adjacent elements that are in the wrong order. Its worst case and average case time is O(n squared). It is simple but slow for large inputs.
+
+## 5.3 Merge sort
+Merge sort divides the array into halves, sorts each half recursively and merges the sorted halves. It always takes O(n log n) time but needs O(n) extra space. It is a stable sort.
+
+## 5.4 Quick sort
+Quick sort picks a pivot, partitions the array so smaller elements go left and larger go right, then sorts both sides recursively. Average time is O(n log n); the worst case is O(n squared) when the pivot is always the smallest or largest element.
